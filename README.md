@@ -2,7 +2,7 @@
 Trabajos y Proyectos desarrollados en la materia de Inteligencia Artificial
 
 ## Alumnos:
-- Soto Iribe Yosef Emilinao
+- Soto Iribe Yosef Emiliano
 - Ramírez Medina Cristian Andrea
 
 ## Tarea 1: Árbol de búsqueda binaria
