@@ -115,7 +115,7 @@ class Puzzle:
 
         tiempo_inicio = time.time()
 
-        while True: 
+        while not pq.empty(): 
             actual = pq.get()
 
             if self.h(actual.val) == 0: 
@@ -132,7 +132,7 @@ class Puzzle:
                     paso += 1
                 print("CANTIDAD DE MOVIMIENTOS:", paso - 1)
                 print(f"Tiempo de ejecución: {duracion:.4f} segundos")
-                break
+                return True
             
             for i in actual.generar_tableros_resultantes(): 
                 i.f = self.h(i.val) + i.distancia
@@ -140,6 +140,9 @@ class Puzzle:
                     distancias[i] = i.f
                     pq.put(i)
                     padres[i] = actual
+        return False
 
 puzzle_8 = Puzzle()
-puzzle_8.jugar()
+
+if not puzzle_8.jugar(): 
+    print("No hay solucion")
