@@ -1,1 +1,2 @@
-
+## Tarea 5: Paradigmas de inteligencia artificial y aprendizaje automatizado
+- **Descripción**: En esta tarea se investigo acerca de cada uno de los paradigmas de la inteligencia artificial en donde se presentaron ejemplos en donde se aplicara ese paradigma asi como tambien se investigo acerca de el aprendizaje automatizado en el que se explico cada una de sus fases y cuales son sus similitudes y diferencias entre el aprendizaje automatizado y el modelo cognitivo
