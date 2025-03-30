@@ -28,6 +28,7 @@ vectorizador = CountVectorizer()
 texto_entrenamiento_count = vectorizador.fit_transform(texto_entrenamiento)
 texto_prueba_count = vectorizador.transform(texto_prueba)
 
+#Se crea y se entrena el modelo
 modelo = MultinomialNB()
 modelo.fit(texto_entrenamiento_count, target_entrenamiento)
 
