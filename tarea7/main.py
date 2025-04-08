@@ -13,7 +13,7 @@ dataset = pd.read_csv("spam_assassin.csv")
 # Definir las palabras vacías (stopwords) en español e inglés para limpiar el texto
 stop_words = set(stopwords.words('spanish')).union(stopwords.words('english'))
 
-#Limpieza del dataset
+#Limpieza del datasett
 dataset = dataset.drop_duplicates(subset="text").copy()
 dataset["text"] = dataset["text"].str.lower()
 dataset["text"] = dataset["text"].str.replace("[^a-zA-Z0-9 ]", " ")
