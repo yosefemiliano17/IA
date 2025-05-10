@@ -68,11 +68,9 @@ resultado_frame.pack(fill=X, padx=20, pady=10)
 
 
 Label(resultado_frame, text="RESULTADO:", font=("Arial", 12, "bold")).pack(pady=5)
-"""resultado_label = Label(resultado_frame, text="Esperando diagnóstico...", 
-                        wraplength=400, justify="center", font=("Arial", 12), fg="black",
-                        height=3)  # Especificar altura mínima"""
+
 resultado_label = Label(resultado_frame, text="Esperando diagnóstico...", 
-                        wraplength=400, justify="left", anchor="w",  # mejor alineado
+                        wraplength=400, justify="left", anchor="w", 
                         font=("Arial", 12), fg="black")
 
 resultado_label.pack(pady=10, fill=X)
@@ -110,13 +108,5 @@ def diagnosticar():
         resultado_label.config(text=texto_final.strip())
     else:
         resultado_label.config(text="No se pudo determinar un diagnóstico exacto.")
-    
-    """if resultado and resultado[0]['Diagnosticos']:
-        diagnosticos = resultado[0]['Diagnosticos']
-        print("Diagnóstico en consola:", diagnosticos)
-        resultado_texto = ", ".join(str(d) for d in diagnosticos)
-        resultado_label.config(text=resultado_texto)
-    else:
-        resultado_label.config(text="No se pudo determinar un diagnóstico exacto.")"""
 
 root.mainloop()
