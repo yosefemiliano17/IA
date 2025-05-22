@@ -4,12 +4,10 @@ import numpy as np
 import random
 import csv
 
-# Directorio base de entrada
 carpeta_base = "DATASET/train"
 carpeta_salida = "DATASET/train_aumentado"
 os.makedirs(carpeta_salida, exist_ok=True)
 
-# Cargar todas las rutas de imágenes y sus etiquetas
 todasImagenes = []
 for emocion in os.listdir(carpeta_base):
     carpeta_emocion = os.path.join(carpeta_base, emocion)
